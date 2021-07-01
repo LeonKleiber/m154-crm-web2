@@ -11,7 +11,7 @@ public class CrmApp {
 	public static void main(String[] args) {
 		Javalin app = Javalin.create();
 
-		app.config.addStaticFiles("resources/public", Location.EXTERNAL);
+		app.config.addStaticFiles("/public", Location.EXTERNAL);
 		app.routes(() -> {
 			post(Path.Web.CUSTOMER, CustomerController.selectCustomer);
 			post(Path.Web.CREATE_CUSTOMER, CustomerController.createCustomer);
