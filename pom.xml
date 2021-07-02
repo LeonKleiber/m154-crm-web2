@@ -96,7 +96,10 @@
 				<version>0.27.2</version>
 				<configuration>
 					<verbose>true</verbose>
-		
+					<authConfig>
+						<username>leonkleiber</username>
+						<password>Wh13vX287</password>
+					</authConfig>
 					<images>
 						<image>
 							<name>leonkleiber/m154-crm</name>
